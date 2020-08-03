@@ -21,8 +21,6 @@ function dibujarLinea(color, xinicial, yinicial, xfinal, yfinal){
 	lienzo.closePath(); //cierra
 }
 
-
-
 function dibujoPorClick() {
 
 	var lineas = parseInt(texto.value);
@@ -34,18 +32,20 @@ function dibujoPorClick() {
 
 	for(l=0;l < lineas; l++){
 		dibujarLinea (colorcito , 0, yinicial, xfinal, 300);
+		dibujarLinea (colorcito , yinicial, 0, 300, xfinal);
+		dibujarLinea (colorcito , 0, 0, 300, 300);
+		dibujarLinea (colorcito , 0, 300, 300, 0);
+
 		yinicial= espacio * l ;
 		xfinal = espacio * (l+1) ;
-		colorcito= colorcito ;
 		
 	}
+
 }
+
 
 dibujarLinea ("black", 0, 0, 0, 300);
 dibujarLinea ("black", 0, 300, 300, 300);
 dibujarLinea ("black", 300, 0, 300, 300);
 dibujarLinea ("black", 0, 0, 300, 0);
-
-
-
 
