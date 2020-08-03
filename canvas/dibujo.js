@@ -22,7 +22,6 @@ function dibujarLinea(color, xinicial, yinicial, xfinal, yfinal){
 }
 
 
-
 function dibujoPorClick() {
 
 	var lineas = parseInt(texto.value);
