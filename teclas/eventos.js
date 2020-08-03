@@ -1,5 +1,8 @@
 var teclas = { UP:38, LEFT:37, RIGHT:39, DOWN:40};
 
+var texto2 = document.getElementById("texto_color");
+var boton2 = document.getElementById("botoncito2");
+boton2.addEventListener("click", dibujarTeclado);
 
 document.addEventListener("keydown",dibujarTeclado);
 document.addEventListener("keyup",dibujarTeclado);
@@ -26,7 +29,7 @@ dibujarLinea ("black", 149, 149, 151, 151, lienzo);
 
 function dibujarTeclado(evento){
 
-	var colorcito = "blue";
+	var colorcito = texto_color.value;
 	var movimiento= 10;
 
 	if (evento.keyCode==teclas.UP){
@@ -51,7 +54,7 @@ function dibujarTeclado(evento){
 }
 
 
-dibujarLinea ("black", 0, 0, 0, 300, lienzo);
+dibujarLinea (texto_color.value, 0, 0, 0, 300, lienzo);
 dibujarLinea ("black", 0, 300, 300, 300, lienzo);
 dibujarLinea ("black", 300, 0, 300, 300, lienzo);
 dibujarLinea ("black", 0, 0, 300, 0,lienzo);
