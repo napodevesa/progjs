@@ -6,10 +6,10 @@ boton2.addEventListener("click", dibujarTeclado);
 
 document.addEventListener("keydown",dibujarTeclado);
 document.addEventListener("keyup",dibujarTeclado);
+
 var c = document.getElementById("area_dibujo");
 var ancho = c.width;
 var lienzo = c.getContext("2d");
-
 
 var x = 150;
 var y = 150;
@@ -49,7 +49,7 @@ function dibujarTeclado(evento){
 
 		dibujarLinea(colorcito, x, y, x+movimiento, y, lienzo);
 		x = x + movimiento;
-	}
+	} 
 
 }
 
