@@ -47,8 +47,6 @@ function dibujar ()
 
 
 
-
-/*
 function aleatorio (min, max)
 {
 
@@ -59,7 +57,7 @@ function aleatorio (min, max)
 	return resultado;
 }
 
-*/
+
 
 
 
