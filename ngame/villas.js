@@ -31,6 +31,14 @@ function dibujar ()
 	{
 		papel.drawImage (fondo.objeto,0,0);
 	}
+	
+	if (vaca.cargaOk)
+	{	var x = aleatorio (0,300)
+		var g = aleatorio (0,400)
+		papel.drawImage (vaca.objeto,x,g);
+
+	}
+	
 }
 
 
