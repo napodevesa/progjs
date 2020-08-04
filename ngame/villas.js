@@ -40,8 +40,8 @@ function dibujar ()
 		for (var v=0; v < cantidad; v++)
 		{							
 
-		var x = aleatorio (0,300)
-		var g = aleatorio (0,400)
+		var x = aleatorio (0,200);
+		var g = aleatorio (0,200);
 		papel.drawImage (vaca.objeto,x,g);
 
 		}

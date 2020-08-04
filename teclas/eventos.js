@@ -1,8 +1,5 @@
 var teclas = { UP:38, LEFT:37, RIGHT:39, DOWN:40};
 
-
-dibujarLinea ("black", 149, 149, 151, 151, lienzo);
-
 var texto2 = document.getElementById("texto_color");
 var boton2 = document.getElementById("botoncito2");
 boton2.addEventListener("click", dibujarTeclado);
@@ -21,7 +18,7 @@ function dibujarLinea(color, xinicial, yinicial, xfinal, yfinal, lienzo){
 
 	lienzo.beginPath(); //inicia
 	lienzo.strokeStyle = color;
-	lienzo.lineWidth = 5;
+	lienzo.lineWidth = 10;
 	lienzo.moveTo(xinicial, yinicial);
 	lienzo.lineTo(xfinal,yfinal);
 	lienzo.stroke();
@@ -32,7 +29,7 @@ dibujarLinea ("black", 149, 149, 151, 151, lienzo);
 
 function dibujarTeclado(evento){
 
-	var colorcito = texto_color.value;
+	var colorcito = texto2.value;
 	var movimiento= 10;
 
 	if (evento.keyCode==teclas.UP){
@@ -61,3 +58,5 @@ dibujarLinea (texto_color.value, 0, 0, 0, 300, lienzo);
 dibujarLinea ("black", 0, 300, 300, 300, lienzo);
 dibujarLinea ("black", 300, 0, 300, 300, lienzo);
 dibujarLinea ("black", 0, 0, 300, 0,lienzo);
+
+
