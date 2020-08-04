@@ -1,5 +1,8 @@
 var teclas = { UP:38, LEFT:37, RIGHT:39, DOWN:40};
 
+
+dibujarLinea ("black", 149, 149, 151, 151, lienzo);
+
 var texto2 = document.getElementById("texto_color");
 var boton2 = document.getElementById("botoncito2");
 boton2.addEventListener("click", dibujarTeclado);
