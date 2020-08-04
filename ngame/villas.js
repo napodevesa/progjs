@@ -33,10 +33,18 @@ function dibujar ()
 	}
 	
 	if (vaca.cargaOk)
-	{	var x = aleatorio (0,300)
+
+	{	
+		var cantidad = aleatorio(1,6);
+		console.log (cantidad);
+		for (var v=0; v < cantidad; v++)
+		{							
+
+		var x = aleatorio (0,300)
 		var g = aleatorio (0,400)
 		papel.drawImage (vaca.objeto,x,g);
 
+		}
 	}
 	
 }
