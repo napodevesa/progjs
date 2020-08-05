@@ -8,6 +8,7 @@ var texto2_diam = document.getElementById("texto_diam");
 var boton2_diam = document.getElementById("botoncito_diam");
 boton2.addEventListener("click", dibujarTeclado);
 
+
 document.addEventListener("keydown",dibujarTeclado);
 document.addEventListener("keyup",dibujarTeclado);
 
@@ -29,12 +30,11 @@ function dibujarLinea(color, xinicial, yinicial, xfinal, yfinal, lienzo){
 	lienzo.closePath(); //cierra
 }
 
-dibujarLinea ("black", 149, 149, 151, 151, lienzo);
 
 function dibujarTeclado(evento){
 
 	var colorcito = texto2.value;
-	var movimiento= 10;
+	var movimiento= 5;
 
 	if (evento.keyCode==teclas.UP){
 		dibujarLinea(colorcito, x, y, x, y-movimiento, lienzo);
@@ -59,8 +59,8 @@ function dibujarTeclado(evento){
 
 
 dibujarLinea (texto_color.value, 0, 0, 0, 300, lienzo);
-dibujarLinea ("black", 0, 300, 300, 300, lienzo);
-dibujarLinea ("black", 300, 0, 300, 300, lienzo);
-dibujarLinea ("black", 0, 0, 300, 0,lienzo);
+dibujarLinea (texto_color.value, 0, 300, 300, 300, lienzo);
+dibujarLinea (texto_color.value, 300, 0, 300, 300, lienzo);
+dibujarLinea (texto_color.value, 0, 0, 300, 0,lienzo);
 
 
