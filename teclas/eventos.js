@@ -4,6 +4,10 @@ var texto2 = document.getElementById("texto_color");
 var boton2 = document.getElementById("botoncito2");
 boton2.addEventListener("click", dibujarTeclado);
 
+var texto2_diam = document.getElementById("texto_diam");
+var boton2_diam = document.getElementById("botoncito_diam");
+boton2.addEventListener("click", dibujarTeclado);
+
 document.addEventListener("keydown",dibujarTeclado);
 document.addEventListener("keyup",dibujarTeclado);
 
@@ -18,7 +22,7 @@ function dibujarLinea(color, xinicial, yinicial, xfinal, yfinal, lienzo){
 
 	lienzo.beginPath(); //inicia
 	lienzo.strokeStyle = color;
-	lienzo.lineWidth = 10;
+	lienzo.lineWidth = texto2_diam.value;
 	lienzo.moveTo(xinicial, yinicial);
 	lienzo.lineTo(xfinal,yfinal);
 	lienzo.stroke();
