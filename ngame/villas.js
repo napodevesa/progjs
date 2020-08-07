@@ -91,7 +91,7 @@ function dibujar ()
 	if (cerdo.cargaOk)
 
 	{	
-		var cantidad = aleatorio(2,9);
+		var cantidad = aleatorio(1,3);
 		for (var v=0; v < cantidad; v++)
 		{							
 
@@ -105,8 +105,6 @@ function dibujar ()
 
 	
 }
-
-
 
 
 
