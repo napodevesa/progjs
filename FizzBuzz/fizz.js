@@ -1,17 +1,16 @@
-var numero = 100; 
 
+var num = 100;
 
-
-	for (var i=1; i < numero ; i++)
+	for (var i=1; i < num ; i++)
 	{	
 
 	 
 		if (esDivisible (i, 3)) {
-	 	document.write("Fizz");
+	 	document.write("Fizz ");
 	 	}
 
 	 	if (esDivisible (i, 5)) {
-	 	document.write("Buzz");
+	 	document.write("Buzz ");
 	 	}
 
 	 	if ((!esDivisible (i, 3)) && (!esDivisible (i, 5))){
