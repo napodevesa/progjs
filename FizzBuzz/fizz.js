@@ -1,12 +1,15 @@
+var getData = function ()
+{
+var num = document.getElementById ("number").value;
 
-var num = 100;
+//console.log (num);
 
 	for (var i=1; i < num ; i++)
 	{	
 
 	 
 		if (esDivisible (i, 3)) {
-	 	document.write("Fizz ");
+	 	resultado.innerHTML = document.write("Fizz ");
 	 	}
 
 	 	if (esDivisible (i, 5)) {
@@ -15,15 +18,16 @@ var num = 100;
 
 	 	if ((!esDivisible (i, 3)) && (!esDivisible (i, 5))){
 
-		document.write(i);
+		resultado.innerHTML= document.write(i);
 
 	 	}
 
-	 	document.write ("<br/>")
+	 	resultado.innerHTML = document.write ("<br/>")
 
 
 	}
 
+}
 
 function esDivisible (num, divisor)
 
@@ -40,4 +44,5 @@ function esDivisible (num, divisor)
 
 }
 
+var resultado = document.getElementById("resultado");
 
