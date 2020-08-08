@@ -1,7 +1,4 @@
-
-
-numero = 100;
-
+var numero = 100; 
 
 
 
