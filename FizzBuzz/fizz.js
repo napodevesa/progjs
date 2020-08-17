@@ -31,6 +31,7 @@ var num = document.getElementById ("number").value;
 
 }
 
+// probando hotfix
 function esDivisible (num, divisor)
 
 {
