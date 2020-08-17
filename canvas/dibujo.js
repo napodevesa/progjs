@@ -45,7 +45,7 @@ function dibujoPorClick() {
 
 }
 
-var color = "black";
+var color = "pink";
 
 dibujarLinea (color, 0, 0, 0, 300);
 dibujarLinea (color,0, 300, 300, 300);
